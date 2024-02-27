@@ -1,16 +1,14 @@
 
 body {
-    padding: 0px;
     font-family: 'Times New Roman', Times, serif
     background-color: #0B1623;
     color: #F5F8FF;
-    margin: 0px;
-    
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    border-bottom: 1px solid #F5F8FF
-    text-align: center;
+    border-bottom: 1px solid #F5F8FF;
 }
 .letter{
     width: 60px;
