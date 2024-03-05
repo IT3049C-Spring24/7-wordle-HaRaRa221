@@ -1,12 +1,25 @@
+:root {
+    --default: #6d0000;
+    --wrong: #3a3a3c;
+    --misplaced: #b59f3b;
+    --correct: #538d4e;
+    --text-color: #f5f5f5;
+}
 
+.light-mode {
+    --default: #F5F8FF;
+    --wrong: #ff4d4d;
+    --correct: #00cc66;
+    --misplaced: #ffcc00;
+    --text-color: #121213;
+    
+}
 
 
 body {
-    background-color: #0B1623;
-    color:  #F5F8FF;
+    background-color: var(--default);
+    color:  var(--text-color);
     font-family: 'Roboto', sans-serif;
-    background-color: #0B1623;
-    color: #F5F8FF;
 }
 
 header h1 {
@@ -20,12 +33,12 @@ header {
 .letter{
     width: 60px;
     height: 60px;
-    border: 2px solid #3A3A3C;
+    border: 2px solid var(--text-color);
     text-transform: uppercase;
     font-size: 2.4rem;
     display: grid;
     place-items: center;
-};
+}
 
 #wordle-grid {
     display: grid;
@@ -33,6 +46,7 @@ header {
     gap: 8px;
     
 }
+
 #game {
     display: grid;
     place-items: center;
@@ -40,28 +54,12 @@ header {
 }
 
 .correct {
-    color: #538D4E;
+    background-color: var(--correct);
 }
 .misplaced {
-    color: #B59F3B;
+    background-color: var(--misplaced);
 }
 .incorrect {
-    color: #3A3A3C;
+    background-color: var(--wrong);
 }
 
-:root {
-    --default: #121213;
-    --wrong: #3a3a3c;
-    --misplaced: #b59f3b;
-    --correct: #538d4e;
-    --text-color: #f5f5f5;
-}
-
-.light-mode {
-    --default: #F5F8FF;
-    --wrong: #ff4d4d;
-    --correct-color: #00cc66;
-    --misplaced-color: #ffcc00;
-    --text-color: #121213;
-    
-}

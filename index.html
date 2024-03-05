@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wordle</title>
-  <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body class = "dark-mode">
+<body>
   <header>
     <h1>Wordle</h1>
     <span id = "mode-toggle">☀️/🌙</span>
@@ -16,17 +16,17 @@
 
 
   <div id = "game">
-    <div id = "wordle-grid">
-      <div id = "letter">a</div>
-      <div id = "letter">b</div>
-      <div id = "letter">c</div>
-      <div id = "letter">d</div>
-      <div id = "letter">e</div>
-      <div id = "letter">a</div>
-      <div id = "letter">b</div>
-      <div id = "letter">c</div>
-      <div id = "letter">d</div>
-      <div id = "letter">e</div>
+    <div id="wordle-grid">
+      <div class="letter correct">b</div>
+      <div class="letter misplaced">c</div>
+      <div class="letter incorrect">a</div>
+      <div class="letter">d</div>
+      <div class="letter">e</div>
+      <div class="letter">a</div>
+      <div class="letter">b</div>
+      <div class="letter">c</div>
+      <div class="letter">d</div>
+      <div class="letter">e</div>
     </div>
   </div>
 
